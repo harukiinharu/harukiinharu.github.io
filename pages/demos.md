@@ -1,9 +1,8 @@
 ---
-title: Demos - Anthony Fu
+title: Demos - 春木Haruki
 display: Demos
-subtitle: Demonstrations for projects I am working on from Tweets
-description: Demonstrations for projects I am working on from Tweets
-art: dots
+subtitle: 一些自制的小东西
+art: plum
 ---
 
 <!-- @layout-full-width -->

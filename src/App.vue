@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const route = useRoute()
+// const route = useRoute()
 
 const imageModel = ref<HTMLImageElement>()
 
@@ -39,7 +39,7 @@ onKeyStroke('Escape', (e) => {
   <NavBar />
   <main class="px-7 py-10 of-x-hidden">
     <RouterView />
-    <Footer :key="route.path" />
+    <!-- <Footer :key="route.path" /> -->
   </main>
   <Transition name="fade">
     <div v-if="imageModel" fixed top-0 left-0 right-0 bottom-0 z-500 backdrop-blur-7 @click="imageModel = undefined">
