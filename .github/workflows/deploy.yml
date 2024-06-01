@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo's default branch
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
