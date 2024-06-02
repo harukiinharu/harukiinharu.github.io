@@ -1,6 +1,6 @@
 ---
 title: 春木Haruki
-description: 春木Haruki 的个人主页
+description: 春木Haruki 的个人空间
 image: https://harukiinharu.github.io
 art: plum
 # or random / dots
