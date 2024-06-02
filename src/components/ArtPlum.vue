@@ -4,7 +4,7 @@ import type { Fn } from '@vueuse/core'
 const r180 = Math.PI
 const r90 = Math.PI / 2
 const r15 = Math.PI / 12
-const color = '#88888825'
+const color = '#c9ffcd'
 
 const el = ref<HTMLCanvasElement | null>(null)
 
