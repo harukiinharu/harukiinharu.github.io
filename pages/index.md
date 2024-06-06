@@ -15,7 +15,7 @@ art: plum
 
 翻译过的歌词放在这块草坪：（正在修剪中 ~）
 
-我主要出现在这：
+你也可以在这里找到我：
 
 <p flex="~ gap-2 wrap" class="mt--2!">
   <a href="https://music.163.com/#/user/home?id=1594809053" target="_blank">
@@ -28,7 +28,7 @@ art: plum
   </a>
 </p>
 
-谢谢你的春时来访，可以赠我一杯花茶吗 ~ 🌼
+春天到了，可以赠我一杯花茶吗 ~ 🌼
 
 <p flex="~ gap-2 wrap" class="mt--2!">
   <a href="https://ko-fi.com/haurkiinharu" target="_blank">
