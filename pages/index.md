@@ -1,19 +1,40 @@
 ---
 title: 春木Haruki
-description: 春木Haruki 的个人空间
-image: https://harukiinharu.github.io
+description: 春木Haruki 的四叶草坪
+# image: https://harukiinharu.github.io
 art: plum
 # or random / dots
 ---
 
-> 春风绿地树先知
+春风绿地树先知，你好，我是春木Haruki，很高兴在春天的那棵蓝花楹下遇见你，这里是我的四叶草坪 🍀
 
-你好，我是春木Haruki，很高兴在春天的那棵蓝花楹下遇见你
+<p>
+我是一枚日语歌词翻译爱好者<span op75 i-material-symbols-translate />，
+日常翻译一些 J-POP 或者 VOCALOID 歌曲🎵，喜欢中午戴起耳机寻找一些尚未被发现的 VOCALOID P 🎧
+</p>
 
-你可以在这里找到我：
+翻译过的歌词放在这块草坪：（正在修剪中 ~）
+
+我主要出现在这：
 
 <p flex="~ gap-2 wrap" class="mt--2!">
-  <a href="https://music.163.com/#/user/home?id=1594809053" target="_blank"><span op75 i-simple-icons-neteasecloudmusic /> 网易云音乐</a>
-  <a href="https://space.bilibili.com/224698542" target="_blank"><span op75 i-simple-icons-bilibili /> 哔哩哔哩</a>
-  <a href="https://github.com/harukiinharu" target="_blank"><span op75 i-simple-icons-github /> Github</a>
+  <a href="https://music.163.com/#/user/home?id=1594809053" target="_blank">
+    <span op75 i-simple-icons-neteasecloudmusic />
+    网易云音乐
+  </a>
+  <a href="https://x.com/harukiinharu" target="_blank">
+    <span op75 i-simple-icons-x />
+    Twitter
+  </a>
+</p>
+
+<br>
+
+谢谢你在春天的来访，可以赠我一杯花茶吗 ~ 🌼
+
+<p flex="~ gap-2 wrap" class="mt--2!">
+  <a href="https://ko-fi.com/haurkiinharu" target="_blank">
+    <span op75 i-simple-icons-kofi />
+    花茶
+  </a>
 </p>
