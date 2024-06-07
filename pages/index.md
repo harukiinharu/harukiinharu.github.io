@@ -10,7 +10,7 @@ art: plum
 
 <p>
   我是一枚日语歌词翻译爱好者<span op75 i-material-symbols-translate />
-  ，这里是一些翻译过的歌词：<a href="/lyrics" target="_blank">Lyrics ♪</a>
+  ，这里是一些翻译过的歌词：<a href="/lyrics">Lyrics ♪</a>
 </p>
 
 日常翻译一些 J-POP 或者 VOCALOID 歌曲 🎵，喜欢中午戴起耳机 🎧 寻找一些宝藏 VOCALOID P
