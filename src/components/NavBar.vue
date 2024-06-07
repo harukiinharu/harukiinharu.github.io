@@ -12,7 +12,7 @@ const { y: scroll } = useWindowScroll()
 <template>
   <header class="header z-40">
     <RouterLink
-      class="w-12 h-12 absolute xl:fixed m-5 select-none outline-none"
+      class="w-12 h-12 absolute m-5 select-none outline-none"
       to="/"
       focusable="false"
     >
@@ -37,6 +37,10 @@ const { y: scroll } = useWindowScroll()
         <RouterLink to="/demos" title="Demos">
           <span class="lt-md:hidden">Demos</span>
           <div i-ri-screenshot-line md:hidden />
+        </RouterLink>
+        <RouterLink to="/lyrics" title="Lyrics">
+          <span class="lt-md:hidden">Lyrics</span>
+          <div i-flowbite-list-music-outline md:hidden />
         </RouterLink>
         <!-- <a href="https://x.com/harukiinharu" target="_blank" title="X" class="lt-md:hidden">
           <div i-simple-icons-x />
