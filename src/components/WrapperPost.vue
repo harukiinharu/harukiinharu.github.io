@@ -131,7 +131,11 @@ const ArtComponent = computed(() => {
   <article ref="content" :class="[frontmatter.tocAlwaysOn ? 'toc-always-on' : '', frontmatter.class]">
     <slot />
   </article>
-  <div v-if="route.path !== '/'" class="prose m-auto mt-8 mb-8 slide-enter animate-delay-500 print:hidden">
+  <div
+    v-if="route.path !== '/'"
+    class="prose m-auto mt-8 mb-8 slide-enter animate-delay-500 print:hidden"
+    :class="[frontmatter.wrapperClass]"
+  >
     <!-- <template v-if="frontmatter.duration">
       <span font-mono op50>> </span>
       <span op50>comment on </span>
