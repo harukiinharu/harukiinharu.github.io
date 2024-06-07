@@ -10,10 +10,10 @@ art: plum
 
 <p>
   我是一枚日语歌词翻译爱好者<span op75 i-material-symbols-translate />
-  ，这里是一些翻译过的歌词：<a href="/lyrics">Lyrics ♪</a>
+  ，这里是一些翻译作品：<a href="/lyrics">Lyrics ♪</a>
 </p>
 
-日常翻译一些 J-POP 或者 VOCALOID 歌曲 🎵，喜欢中午戴起耳机 🎧 寻找一些宝藏 VOCALOID P
+日常兴趣是翻译一些 J-POP 或者 VOCALOID 歌曲 🎵，喜欢中午戴起耳机 🎧 寻找一些宝藏 VOCALOID P
 
 你也可以在这里找到我：
 
@@ -28,7 +28,7 @@ art: plum
   </a>
 </p>
 
-春天到了，想喝一杯花茶吗 ~ 🌼
+春天到了，喜欢我的翻译的话可以赠我一杯花茶 ~ 🌼
 
 <p flex="~ gap-2 wrap" class="mt--2!">
   <a href="https://ko-fi.com/haurkiinharu" target="_blank">
