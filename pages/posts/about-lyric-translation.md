@@ -19,7 +19,7 @@ duration: 2min
 就是第一次上传审核通过的翻译，放这当做纪念吧
 （感谢傘村トータ，这个专辑真的很好听 ~）
 
-![](/images/contribution-lyric.png)
+![](/images/contribution-lyric.webp)
 
 从开始这项兴趣以来，翻译并上传网易云音乐成功的一些歌曲有 カンザキイオリさん 的「少年少女」和「あの春を返して」、
 花譜ちゃん 的「ゲシュタルト」以及其他一些作者的作品，都放在这里了：[Lyrics ♪](/lyrics)
