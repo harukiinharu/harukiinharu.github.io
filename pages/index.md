@@ -28,7 +28,7 @@ art: plum
   </a>
 </p>
 
-春天到了，喜欢我的翻译的话可以赠我一杯花茶 ~ 🌼
+春天到了，想喝一杯花茶 ~ 🌼
 
 <p flex="~ gap-2 wrap" class="mt--2!">
   <a href="https://ko-fi.com/haurkiinharu" target="_blank">
