@@ -23,6 +23,7 @@ declare module 'vue-router/auto-routes' {
     '/demos': RouteRecordInfo<'/demos', '/demos', Record<never, never>, Record<never, never>>,
     '/lyrics': RouteRecordInfo<'/lyrics', '/lyrics', Record<never, never>, Record<never, never>>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
+    '/posts/about-lyric-translation': RouteRecordInfo<'/posts/about-lyric-translation', '/posts/about-lyric-translation', Record<never, never>, Record<never, never>>,
     '/posts/why-blog-in-2024': RouteRecordInfo<'/posts/why-blog-in-2024', '/posts/why-blog-in-2024', Record<never, never>, Record<never, never>>,
   }
 }

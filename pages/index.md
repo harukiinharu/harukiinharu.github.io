@@ -8,10 +8,9 @@ art: plum
 
 春风绿地树先知，你好，我是春木Haruki，很高兴在春天的那棵蓝花楹下遇见你，这里是我的四叶草坪 🍀
 
-<p>
-  我是一枚日语歌词翻译爱好者<span op75 i-material-symbols-translate />
-  ，这里是一些翻译作品：<a href="/lyrics">Lyrics ♪</a>
-</p>
+我是一枚日语歌词翻译爱好者<span op75 i-material-symbols-translate />，
+这里是一些翻译作品：[Lyrics ♪](/lyrics)，
+以及关于歌词翻译的一些思考：[关于歌词翻译](/posts/about-lyric-translation)
 
 日常兴趣是翻译一些 J-POP 或者 VOCALOID 歌曲 🎵，喜欢中午戴起耳机 🎧 寻找一些宝藏 VOCALOID P
 
