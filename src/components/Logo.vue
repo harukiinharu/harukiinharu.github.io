@@ -1,7 +1,20 @@
 <template>
-  <svg id="_layer_2" data-name="layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 549 420">
-    <g id="_layer_1-2" data-name="layer 1">
-      <path class="cls-1" d="m38.74,260.08v58.43h187.11v21.09H38.74v57.12h200.76v-136.64H38.74Zm28.62-90.5l-36.98,69.42h214.4l-35.66-69.42H67.36Zm416.48-83.03h21.57l43.59,333.45h-21.13l-44.03-333.45Zm-163.33,0h21.13l-43.59,333.45h-21.57l44.03-333.45ZM401.95,2.64h21.14v44.81h124.15v21.09h-124.15v351.46h-21.14V68.54h-123.71v-21.09h123.71V2.64ZM134.28,0h24.21l-12.77,23.72h128.12v21.09h-139.56l-22.01,41.3h161.57v21.09H100.82l-22.01,41.29h195.03v21.09h-40.94l42.7,80.84h-14.97v167.38H17.61v-167.38H0l43.15-80.84H3.52v-21.09h51.07l22.01-41.29H3.52v-21.09h84.53l22.01-41.3H3.52v-21.09h117.99L134.28,0Z" />
+  <svg id="_layer_2" data-name="layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1363.56 1072.15">
+    <g id="layer1">
+      <path class="path1" d="m9.78,109.08h668.76" />
+      <path class="path1" d="m9.78,266.08h668.76" />
+      <path class="path1" d="m9.78,420.08h668.76" />
+      <path class="path1" d="m22.78,661.86L367.38,12.08" />
+      <path class="path1" d="m661.72,664.33l-127.94-241.25" />
+      <path class="path1" d="m67.78,646.08h577.58" />
+      <path class="path1" d="m67.78,1065.84v-432.76" />
+      <path class="path1" d="m620.78,1065.84v-432.76" />
+      <path class="path1" d="m67.78,1039.08h577.58" />
+      <path class="path1" d="m67.78,845.08h493.28" />
+      <path class="path1" d="m694.78,168.08h668.76" />
+      <path class="path1" d="m1025.78,1071.13V31.08" />
+      <path class="path1" d="m714.78,1068.87l106.21-828.79" />
+      <path class="path1" d="m1337.99,1068.87l-106.21-828.79" />
     </g>
   </svg>
 </template>
@@ -49,6 +62,7 @@
 .path1 {
   stroke-dashoffset: 1px;
   stroke-dasharray: 350px 0;
+  stroke-width: 50px;
   animation: grow 10s ease forwards infinite;
   transform-origin: center;
   stroke: #303030;
@@ -56,6 +70,6 @@
 }
 
 .dark .path1 {
-  stroke: #fdfdfd;
+  stroke: #c3c3c3;
 }
 </style>
