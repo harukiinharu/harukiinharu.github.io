@@ -1,6 +1,6 @@
 #!/bin/sh
 
-folder_list=("public/images" "lyric")
+folder_list=("./public/images" "./lyric")
 
 for folder in "${folder_list[@]}"; do
     for file in $folder/*.png; do
