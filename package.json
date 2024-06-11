@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.2.0",
+  "packageManager": "pnpm@9.3.0",
   "scripts": {
     "dev": "vite --port 3333 --open",
     "build": "cross-env NODE_ENV=production vite-ssg build",
@@ -18,7 +18,7 @@
     "nprogress": "^0.2.0",
     "shiki-magic-move": "^0.4.2",
     "vue": "^3.4.27",
-    "vue-router": "4.3.2",
+    "vue-router": "4.3.3",
     "vue-router-better-scroller": "^0.0.0"
   },
   "devDependencies": {
