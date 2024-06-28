@@ -25,16 +25,16 @@ const { frontmatter, video, date } = defineProps({
       :href="frontmatter.link"
       target="_blank"
     >
+      <div class="prose prose-sm p4 m0 pb3">
+        <div op50 text-sm pt2>{{ formatDate(date, false) }}</div>
+        <slot />
+      </div>
+
       <video
         v-if="video"
         :src="video"
         w-full autoplay loop muted playsinline border="b base"
       />
-
-      <div class="prose prose-sm p4 m0 pb3">
-        <slot />
-        <div op50 text-sm pt2>{{ formatDate(date, false) }}</div>
-      </div>
     </a>
   </div>
 </template>
