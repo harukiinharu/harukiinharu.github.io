@@ -24,7 +24,6 @@ declare module 'vue-router/auto-routes' {
     '/lyrics': RouteRecordInfo<'/lyrics', '/lyrics', Record<never, never>, Record<never, never>>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/about-lyric-translation': RouteRecordInfo<'/posts/about-lyric-translation', '/posts/about-lyric-translation', Record<never, never>, Record<never, never>>,
-    '/posts/rat-race-and-inner-peace': RouteRecordInfo<'/posts/rat-race-and-inner-peace', '/posts/rat-race-and-inner-peace', Record<never, never>, Record<never, never>>,
     '/posts/why-blog-in-2024': RouteRecordInfo<'/posts/why-blog-in-2024', '/posts/why-blog-in-2024', Record<never, never>, Record<never, never>>,
   }
 }
