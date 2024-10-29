@@ -1,9 +1,9 @@
 ---
-title: Blog - 春木Haruki
+title: Posts - 春木Haruki
 display: ''
 art: plum
 ---
 
 <SubNav />
 
-<ListPosts only-date type="blog" />
+<ListPosts only-date type="posts" />
