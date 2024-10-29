@@ -42,9 +42,9 @@ const { y: scroll } = useWindowScroll()
           <span class="lt-md:hidden">Lyrics</span>
           <div i-flowbite-list-music-outline md:hidden />
         </RouterLink>
-        <!-- <a href="https://x.com/harukiinharu" target="_blank" title="X" class="lt-md:hidden">
+        <a href="https://x.com/harukiinharu" target="_blank" title="X" class="lt-md:hidden">
           <div i-simple-icons-x />
-        </a> -->
+        </a>
         <a href="https://github.com/harukiinharu/harukiinharu.github.io" target="_blank" title="GitHub">
           <div i-uil-github-alt />
         </a>
