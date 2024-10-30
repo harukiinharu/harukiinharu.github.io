@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.5.0",
+  "packageManager": "pnpm@9.12.3",
   "scripts": {
     "dev": "vite --port 3333 --open",
     "build": "cross-env NODE_ENV=production vite-ssg build",
