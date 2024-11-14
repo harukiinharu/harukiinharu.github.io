@@ -5,7 +5,7 @@
     "dev": "vite --port 3333 --open",
     "build": "cross-env NODE_ENV=production vite-ssg build",
     "preview": "vite preview --port 4444",
-    "png2webp": "./scripts/png2webp.sh",
+    "img2webp": "./scripts/img2webp.sh",
     "lint": "eslint ."
   },
   "dependencies": {
