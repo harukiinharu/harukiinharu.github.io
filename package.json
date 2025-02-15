@@ -4,7 +4,7 @@
   "scripts": {
     "d": "vite --open",
     "b": "cross-env NODE_ENV=production vite-ssg build",
-    "p": "pnpx serve dist",
+    "p": "pnpx http-server dist -a 127.0.0.1 -p 3000",
     "img2webp": "./scripts/img2webp.sh"
   },
   "dependencies": {
