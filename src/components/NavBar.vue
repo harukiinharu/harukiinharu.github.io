@@ -11,17 +11,23 @@ const { y: scroll } = useWindowScroll()
 
 <template>
   <header class="header z-40">
-    <RouterLink
-      class="w-12 h-12 absolute m-5 select-none outline-none"
-      to="/"
-      focusable="false"
-    >
+    <RouterLink class="w-12 h-12 absolute m-5 select-none outline-none" to="/" focusable="false">
       <Logo />
     </RouterLink>
     <button
       title="Scroll to top"
-      fixed right-3 bottom-3 w-10 h-10 hover:op100 rounded-full
-      hover-bg-hex-8883 transition duration-300 z-100 print:hidden
+      fixed
+      right-3
+      bottom-3
+      w-10
+      h-10
+      hover:op100
+      rounded-full
+      hover-bg-hex-8883
+      transition
+      duration-300
+      z-100
+      print:hidden
       :class="scroll > 300 ? 'op30' : 'op0! pointer-events-none'"
       @click="toTop()"
     >
@@ -42,6 +48,12 @@ const { y: scroll } = useWindowScroll()
           <span class="lt-md:hidden">Lyrics</span>
           <div i-flowbite-list-music-outline md:hidden />
         </RouterLink>
+        <a href="https://space.bilibili.com/224698542" target="_blank" title="bilibili">
+          <div i-simple-icons-bilibili />
+        </a>
+        <a href="https://music.163.com/#/user/home?id=1594809053" target="_blank" title="wyy">
+          <div i-simple-icons-neteasecloudmusic />
+        </a>
         <a href="https://x.com/harukiinharu" target="_blank" title="X" class="lt-md:hidden">
           <div i-simple-icons-x />
         </a>
