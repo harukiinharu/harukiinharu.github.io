@@ -18,6 +18,8 @@ art: plum
 
 发现「生きていたんだよな」歌词消失了，于是做了个播放页面以此纪念👉[singfor.live](https://singfor.live)
 
+一个双歌词播放器，专门针对【裏表ラバーズ×ロストワンの号哭】👉[double-lyric](https://double-lyric.singfor.live)
+
 发现一个 canvas 渲染「命に嫌われている」歌词的 demo，于是完善了一下👉[kanji](https://harukiinharu.vercel.app/kanji)
 
 
