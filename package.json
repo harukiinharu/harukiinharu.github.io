@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "scripts": {
     "d": "vite --open",
     "b": "cross-env NODE_ENV=production vite-ssg build",
