@@ -57,7 +57,7 @@ const { y: scroll } = useWindowScroll()
         <a href="https://x.com/harukiinharu" target="_blank" title="X" class="lt-md:hidden">
           <div i-simple-icons-x />
         </a>
-        <a href="https://github.com/harukiinharu/harukiinharu.github.io" target="_blank" title="GitHub">
+        <a href="https://github.com/harukiinharu/haruki.blog" target="_blank" title="GitHub">
           <div i-uil-github-alt />
         </a>
         <ToggleTheme />
