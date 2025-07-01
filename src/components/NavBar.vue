@@ -48,16 +48,22 @@ const { y: scroll } = useWindowScroll()
           <span class="lt-md:hidden">Lyrics</span>
           <div i-flowbite-list-music-outline md:hidden />
         </RouterLink>
-        <a href="https://space.bilibili.com/224698542" target="_blank" title="bilibili">
+        <a href="https://space.bilibili.com/224698542" target="_blank" title="bilibili" class="lt-md:hidden">
           <div i-simple-icons-bilibili />
         </a>
-        <a href="https://music.163.com/#/user/home?id=1594809053" target="_blank" title="wyy">
+        <a href="https://music.163.com/#/user/home?id=1594809053" target="_blank" title="wyy" class="lt-md:hidden">
           <div i-simple-icons-neteasecloudmusic />
+        </a>
+        <a href="https://www.xiaohongshu.com/user/profile/6785bbd4000000000801ec17" target="_blank" title="xhs" class="lt-md:hidden">
+          <div i-simple-icons-xiaohongshu />
         </a>
         <a href="https://x.com/harukiinharu" target="_blank" title="X" class="lt-md:hidden">
           <div i-simple-icons-x />
         </a>
-        <a href="https://github.com/harukiinharu/haruki.blog" target="_blank" title="GitHub">
+        <a href="https://youtube.com/@harukiinharu" target="_blank" title="X" class="lt-md:hidden">
+          <div i-simple-icons-youtube />
+        </a>
+        <a href="https://github.com/harukiinharu/haruki.blog" target="_blank" title="GitHub" class="lt-md:hidden">
           <div i-uil-github-alt />
         </a>
         <ToggleTheme />

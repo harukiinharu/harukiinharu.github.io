@@ -34,9 +34,17 @@ art: plum
     <span op75 i-simple-icons-neteasecloudmusic />
     网易云音乐
   </a>
+  <a href="https://www.xiaohongshu.com/user/profile/6785bbd4000000000801ec17" target="_blank">
+    <span op75 i-simple-icons-xiaohongshu />
+    小红书
+  </a>
   <a href="https://x.com/harukiinharu" target="_blank">
     <span op75 i-simple-icons-x />
     Twitter
+  </a>
+  <a href="https://youtube.com/@harukiinharu" target="_blank">
+    <span op75 i-simple-icons-youtube />
+    Youtube
   </a>
 </p>
 
