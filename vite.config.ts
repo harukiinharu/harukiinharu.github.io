@@ -19,6 +19,8 @@ import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
 import MarkdownItMagicLink from 'markdown-it-magic-link'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
+import { ViteSSGOptions } from 'vite-ssg'
+import generateSitemap from 'vite-ssg-sitemap'
 
 // @ts-expect-error missing types
 import TOC from 'markdown-it-table-of-contents'
@@ -26,20 +28,21 @@ import { slugify } from './scripts/slugify'
 
 const promises: Promise<any>[] = []
 
+const ssgOptions: ViteSSGOptions = {
+  script: 'async',
+  formatting: 'minify',
+  onFinished() {
+    generateSitemap({ hostname: 'https://haruki.blog', dynamicRoutes: ['double-lyric', 'kanji', 'plum', 'manga'] })
+  },
+}
+
 export default defineConfig({
   resolve: {
-    alias: [
-      { find: '~/', replacement: `${resolve(__dirname, 'src')}/` },
-    ],
+    alias: [{ find: '~/', replacement: `${resolve(__dirname, 'src')}/` }],
   },
+  ssgOptions,
   optimizeDeps: {
-    include: [
-      'vue',
-      'vue-router',
-      '@vueuse/core',
-      'dayjs',
-      'dayjs/plugin/localizedFormat',
-    ],
+    include: ['vue', 'vue-router', '@vueuse/core', 'dayjs', 'dayjs/plugin/localizedFormat'],
   },
   plugins: [
     UnoCSS(),
@@ -50,8 +53,7 @@ export default defineConfig({
       logs: true,
       extendRoute(route) {
         const path = route.components.get('default')
-        if (!path)
-          return
+        if (!path) return
 
         if (!path.includes('projects.md') && path.endsWith('.md')) {
           const { data } = matter(fs.readFileSync(path, 'utf-8'))
@@ -70,12 +72,8 @@ export default defineConfig({
     }),
 
     Markdown({
-      wrapperComponent: id => id.includes('/demo/')
-        ? 'WrapperDemo'
-        : id.includes('/lyric/') ? 'WrapperLyric' : 'WrapperPost',
-      wrapperClasses: (id, code) => code.includes('@layout-full-width')
-        ? ''
-        : 'prose m-auto slide-enter-content',
+      wrapperComponent: id => (id.includes('/demo/') ? 'WrapperDemo' : id.includes('/lyric/') ? 'WrapperLyric' : 'WrapperPost'),
+      wrapperClasses: (id, code) => (code.includes('@layout-full-width') ? '' : 'prose m-auto slide-enter-content'),
       headEnabled: true,
       exportFrontmatter: false,
       exposeFrontmatter: false,
@@ -84,20 +82,22 @@ export default defineConfig({
         quotes: '""\'\'',
       },
       async markdownItSetup(md) {
-        md.use(await MarkdownItShiki({
-          themes: {
-            dark: 'vitesse-dark',
-            light: 'vitesse-light',
-          },
-          defaultColor: false,
-          cssVariablePrefix: '--s-',
-          transformers: [
-            transformerTwoslash({
-              explicitTrigger: true,
-              renderer: rendererRich(),
-            }),
-          ],
-        }))
+        md.use(
+          await MarkdownItShiki({
+            themes: {
+              dark: 'vitesse-dark',
+              light: 'vitesse-light',
+            },
+            defaultColor: false,
+            cssVariablePrefix: '--s-',
+            transformers: [
+              transformerTwoslash({
+                explicitTrigger: true,
+                renderer: rendererRich(),
+              }),
+            ],
+          })
+        )
 
         md.use(anchor, {
           slugify,
@@ -123,30 +123,30 @@ export default defineConfig({
 
         md.use(MarkdownItMagicLink, {
           linksMap: {
-            'NuxtLabs': 'https://nuxtlabs.com',
-            'Vitest': 'https://github.com/vitest-dev/vitest',
-            'Slidev': 'https://github.com/slidevjs/slidev',
-            'VueUse': 'https://github.com/vueuse/vueuse',
-            'UnoCSS': 'https://github.com/unocss/unocss',
-            'Elk': 'https://github.com/elk-zone/elk',
+            NuxtLabs: 'https://nuxtlabs.com',
+            Vitest: 'https://github.com/vitest-dev/vitest',
+            Slidev: 'https://github.com/slidevjs/slidev',
+            VueUse: 'https://github.com/vueuse/vueuse',
+            UnoCSS: 'https://github.com/unocss/unocss',
+            Elk: 'https://github.com/elk-zone/elk',
             'Type Challenges': 'https://github.com/type-challenges/type-challenges',
-            'Vue': 'https://github.com/vuejs/core',
-            'Nuxt': 'https://github.com/nuxt/nuxt',
-            'Vite': 'https://github.com/vitejs/vite',
-            'Shiki': 'https://github.com/shikijs/shiki',
-            'Twoslash': 'https://github.com/twoslashes/twoslash',
+            Vue: 'https://github.com/vuejs/core',
+            Nuxt: 'https://github.com/nuxt/nuxt',
+            Vite: 'https://github.com/vitejs/vite',
+            Shiki: 'https://github.com/shikijs/shiki',
+            Twoslash: 'https://github.com/twoslashes/twoslash',
             'ESLint Stylistic': 'https://github.com/eslint-stylistic/eslint-stylistic',
-            'Unplugin': 'https://github.com/unplugin',
+            Unplugin: 'https://github.com/unplugin',
             'Nuxt DevTools': 'https://github.com/nuxt/devtools',
             'Vite PWA': 'https://github.com/vite-pwa',
             'i18n Ally': 'https://github.com/lokalise/i18n-ally',
-            'ESLint': 'https://github.com/eslint/eslint',
-            'Astro': 'https://github.com/withastro/astro',
-            'TwoSlash': 'https://github.com/twoslashes/twoslash',
+            ESLint: 'https://github.com/eslint/eslint',
+            Astro: 'https://github.com/withastro/astro',
+            TwoSlash: 'https://github.com/twoslashes/twoslash',
             'Anthony Fu Collective': { link: 'https://opencollective.com/antfu', imageUrl: 'https://github.com/antfu-collective.png' },
-            'Netlify': { link: 'https://netlify.com', imageUrl: 'https://github.com/netlify.png' },
-            'Stackblitz': { link: 'https://stackblitz.com', imageUrl: 'https://github.com/stackblitz.png' },
-            'Vercel': { link: 'https://vercel.com', imageUrl: 'https://github.com/vercel.png' },
+            Netlify: { link: 'https://netlify.com', imageUrl: 'https://github.com/netlify.png' },
+            Stackblitz: { link: 'https://stackblitz.com', imageUrl: 'https://github.com/stackblitz.png' },
+            Vercel: { link: 'https://vercel.com', imageUrl: 'https://github.com/vercel.png' },
           },
           imageOverrides: [
             ['https://github.com/vuejs/core', 'https://vuejs.org/logo.svg'],
@@ -165,11 +165,7 @@ export default defineConfig({
     }),
 
     AutoImport({
-      imports: [
-        'vue',
-        VueRouterAutoImports,
-        '@vueuse/core',
-      ],
+      imports: ['vue', VueRouterAutoImports, '@vueuse/core'],
     }),
 
     Components({
@@ -206,13 +202,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       onwarn(warning, next) {
-        if (warning.code !== 'UNUSED_EXTERNAL_IMPORT')
-          next(warning)
+        if (warning.code !== 'UNUSED_EXTERNAL_IMPORT') next(warning)
       },
     },
-  },
-
-  ssgOptions: {
-    formatting: 'minify',
   },
 })
