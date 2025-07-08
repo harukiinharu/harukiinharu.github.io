@@ -32,7 +32,7 @@ const ssgOptions: ViteSSGOptions = {
   script: 'async',
   formatting: 'minify',
   onFinished() {
-    generateSitemap({ hostname: 'https://haruki.blog', dynamicRoutes: ['double-lyric', 'kanji', 'plum', 'manga'] })
+    generateSitemap({ hostname: 'https://haruki.blog', dynamicRoutes: ['double-lyric', 'kanji', 'plum', 'manga', 'fairy'] })
   },
 }
 
