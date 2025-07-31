@@ -19,8 +19,6 @@ import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
 import MarkdownItMagicLink from 'markdown-it-magic-link'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
-import { ViteSSGOptions } from 'vite-ssg'
-import generateSitemap from 'vite-ssg-sitemap'
 
 // @ts-expect-error missing types
 import TOC from 'markdown-it-table-of-contents'
@@ -28,19 +26,10 @@ import { slugify } from './scripts/slugify'
 
 const promises: Promise<any>[] = []
 
-const ssgOptions: ViteSSGOptions = {
-  script: 'async',
-  formatting: 'minify',
-  onFinished() {
-    generateSitemap({ hostname: 'https://haruki.blog', dynamicRoutes: ['double-lyric', 'kanji', 'plum', 'manga', 'fairy'] })
-  },
-}
-
 export default defineConfig({
   resolve: {
     alias: [{ find: '~/', replacement: `${resolve(__dirname, 'src')}/` }],
   },
-  ssgOptions,
   optimizeDeps: {
     include: ['vue', 'vue-router', '@vueuse/core', 'dayjs', 'dayjs/plugin/localizedFormat'],
   },
