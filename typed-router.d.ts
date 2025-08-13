@@ -26,4 +26,56 @@ declare module 'vue-router/auto-routes' {
     '/posts/about-lyric-translation': RouteRecordInfo<'/posts/about-lyric-translation', '/posts/about-lyric-translation', Record<never, never>, Record<never, never>>,
     '/posts/why-blog-in-2024': RouteRecordInfo<'/posts/why-blog-in-2024', '/posts/why-blog-in-2024', Record<never, never>, Record<never, never>>,
   }
+
+  /**
+   * Route file to route info map by unplugin-vue-router.
+   * Used by the volar plugin to automatically type useRoute()
+   *
+   * Each key is a file path relative to the project root with 2 properties:
+   * - routes: union of route names of the possible routes when in this page (passed to useRoute<...>())
+   * - views: names of nested views (can be passed to <RouterView name="...">)
+   *
+   * @internal
+   */
+  export interface _RouteFileInfoMap {
+    'pages/index.md': {
+      routes: '/'
+      views: never
+    }
+    'pages/[...404].md': {
+      routes: '/[...404]'
+      views: never
+    }
+    'pages/demos.md': {
+      routes: '/demos'
+      views: never
+    }
+    'pages/lyrics.md': {
+      routes: '/lyrics'
+      views: never
+    }
+    'pages/posts/index.md': {
+      routes: '/posts/'
+      views: never
+    }
+    'pages/posts/about-lyric-translation.md': {
+      routes: '/posts/about-lyric-translation'
+      views: never
+    }
+    'pages/posts/why-blog-in-2024.md': {
+      routes: '/posts/why-blog-in-2024'
+      views: never
+    }
+  }
+
+  /**
+   * Get a union of possible route names in a certain route component file.
+   * Used by the volar plugin to automatically type useRoute()
+   *
+   * @internal
+   */
+  export type _RouteNamesForFilePath<FilePath extends string> =
+    _RouteFileInfoMap extends Record<FilePath, infer Info>
+      ? Info['routes']
+      : keyof RouteNamedMap
 }
