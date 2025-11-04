@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.20.0",
   "scripts": {
     "d": "vite",
     "b": "cross-env NODE_ENV=production vite-ssg build",
